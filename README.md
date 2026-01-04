@@ -7,7 +7,11 @@ Requires [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 Create an docker run alias for both composer and php
 
 ```shell
+# these command uses the latest version
 alias composer="docker run --rm --interactive --tty --volume $PWD:/app composer"
+alias php="docker run --rm --interactive --tty --volume $PWD:/app php"
+
+# to use specific php version
 alias php="docker run --rm --interactive --tty --volume $PWD:/app php:7.4"
 ```
 
